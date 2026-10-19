@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slime Brawl - Privacy Policy</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #222; background: #fff; }
+  h1, h2 { line-height: 1.2; }
+  .muted { color: #666; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Slime Brawl - Privacy Policy</h1>
+<p class="muted">Last updated: 19 October 2026. Applies to Slime Brawl on Android (package <code>me.convertini.slimebrawl</code>), Windows, Linux and the browser version.</p>
+
+<h2>Short version</h2>
+<p>Slime Brawl has no accounts, no advertising, no analytics and no tracking. The developer does not collect, store, sell or share any personal data.</p>
+
+<h2>What stays on your device</h2>
+<p>Settings, key bindings and match replays are saved only on your device, in the app's own storage. They are never uploaded. Uninstalling the app deletes them.</p>
+
+<h2>Online play</h2>
+<p>Local matches and LAN matches do not contact any server run by the developer.</p>
+<p>When you create or join an online (crossplay) room, the game connects directly to the other players (peer-to-peer, WebRTC, encrypted). To set up that connection:</p>
+<ul>
+  <li>the game connects to a <strong>signaling server</strong> (<code>signal.convertini.me</code>, run by the developer behind Cloudflare) that relays the connection messages between the players of the same room: the room code, a random session id and the technical network details needed to connect (IP addresses and ports, WebRTC offers/answers). Like any internet server it sees your IP address. The messages are only passed on while the room is open: there is no database and nothing is kept, apart from the server software's own short-lived technical log (connection events), used only to keep the service running;</li>
+  <li>the game asks public <strong>STUN servers</strong> (Cloudflare <code>stun.cloudflare.com</code>, Google <code>stun.l.google.com</code>) for your public address, as every WebRTC application does;</li>
+  <li>when a direct connection is not possible, the traffic may be relayed by a <strong>TURN server</strong> of Cloudflare. The relay only forwards the encrypted game packets and does not read them.</li>
+</ul>
+<p>The other players in your room receive your IP address (needed for a direct connection), the in-game name shown in the lobby (on Android always the default "player") and your game inputs during the match. There is no chat.</p>
+<p>The game never sends your name, e-mail, contacts, location, device identifiers or any other personal data, and contains no third-party SDKs for advertising or analytics.</p>
+<p>Cloudflare and Google process network traffic under their own privacy policies:
+<a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>,
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+<h2>Children</h2>
+<p>The game is not directed at children under 13 and does not knowingly collect data from anyone.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be published on this page with a new date. Questions: open an issue at
+<a href="https://github.com/DrDamnation/slimebrawl-site/issues">github.com/DrDamnation/slimebrawl-site/issues</a>.</p>
+
+<hr>
+<h2 lang="it">In breve (italiano)</h2>
+<p lang="it">Slime Brawl non ha account, pubblicità, statistiche né tracciamento; lo sviluppatore non raccoglie, non conserva e non cede dati personali. Impostazioni e replay restano sul dispositivo. Nel gioco online la connessione tra i giocatori è diretta (WebRTC, cifrata); per collegarli, il server di signaling <code>signal.convertini.me</code> (via Cloudflare) inoltra i messaggi di connessione (codice stanza, indirizzi IP e porte) senza conservarli (nessun database; solo il breve log tecnico del server, usato per farlo funzionare), i server STUN pubblici di Cloudflare e Google rilevano l'indirizzo pubblico e, se serve, un relay TURN di Cloudflare inoltra i pacchetti cifrati. Gli altri giocatori della stanza vedono il tuo indirizzo IP, il nome in lobby ("player" su Android) e i tuoi input di gioco. Non è un gioco destinato ai minori di 13 anni.</p>
+</body>
+</html>
